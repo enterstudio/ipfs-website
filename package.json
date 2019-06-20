@@ -13,10 +13,16 @@
     "metalsmith-permalinks": "^0.4.0",
     "metalsmith-static": "0.0.5",
     "nunjucks-markdown": "^1.0.0",
-    "metalsmith-templates": "~0.6.1"
+    "metalsmith-templates": "~0.6.1",
+    "snyk": "^1.179.0"
   },
   "devDependencies": {
     "metalsmith-serve": "0.0.3",
     "metalsmith-watch": "^0.2.0"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
